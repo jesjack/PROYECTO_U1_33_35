@@ -1,0 +1,27 @@
+{
+  "name": "forophp",
+  "version": "1.0.0",
+  "description": "Foro para proyecto de programación",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx nodemon",
+    "start": "npx nodemon"
+  },
+  "keywords": [
+    "PHP",
+    "Foro",
+    "Web"
+  ],
+  "author": "Edgar Jesús Moreno Castañeda y Jorge Muñoz Aguirre",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4",
+    "php": "^1.0.1"
+  }
+}

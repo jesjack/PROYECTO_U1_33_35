@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/src/font/Product Sans Regular.ttf');
+} @font-face {
+  font-family: 'Product Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/src/font/Product Sans Italic.ttf');
+} @font-face {
+  font-family: 'Product Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/src/font/Product Sans Bold Italic.ttf');
+} @font-face {
+  font-family: 'Product Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/src/font/Product Sans Bold.ttf');
+} @font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/src/font/Product Sans Light.ttf');
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+@media (min-width: 0px) {
+  * {
+    font-family: Product Sans;
+  }
+
+  .f-sesion {
+    width: 100%;
+  } .j-input {
+    border: 0!important;
+    box-shadow: none!important;
+    border-bottom: 3px solid var(--primary)!important;
+    font-weight: 300!important;
+  } .btn, small {
+    font-weight: 300!important;
+  }
+
+  .j-input.is-valid {
+    border-color: var(--escarlata)!important;
+  } .j-input.is-invalid {
+    border-color: var(--danger)!important;
+  }
+
+  .j-bg-img {
+    transition: all 1s;
+    background-image: url('/src/img/cuestions.jpg');
+    min-height: calc(100vh - 56px);
+    background-size: 300px;
+    display: none;
+    background-position: center;
+    position: relative;
+  }
+  .j-bg-img::after {
+    top: 0;
+    position: absolute;
+    transition: all 1s;
+    content: '';
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(117, 150, 221, 0.247);
+    display: block;
+  } .j-bg-img:hover::after {
+    /* backdrop-filter: blur(0px); */
+  } .j-bg-img:hover {
+    background-size: 400px;
+  }
+
+  .j-non-bg {
+    max-width: 100%;
+  } .j-big-bar a{
+    font-size: 100%;
+    /* padding: 1rem; */
+    /* background-color: red!important; */
+  } .j-p-5 {
+    padding: 0rem;
+  } .j-small-big-h1 {
+    font-size: 150%;
+  } .arrow {
+    display: none;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .f-sesion {
+    width: 35rem;
+  } .j-big-bar a{
+    font-size: 150%;
+    padding: 1rem;
+    /* background-color: blue!important; */
+  } .j-p-5 {
+    padding: 5rem;
+  } .j-big-h1 {
+    font-size: 500%;
+  } .j-small-big-h1 {
+    font-size: 300%;
+  } .arrow {
+    display: block;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .j-bg-img {
+    display: block;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

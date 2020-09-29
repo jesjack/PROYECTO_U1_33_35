@@ -1,0 +1,24 @@
+.pre-arrow {
+  position: relative;
+  /* background-color: blue; */
+} .arrow {
+  position: absolute;
+  border: 5px solid black;
+  border-color: transparent transparent black black;
+  border-radius: 100px 0px 0px 50px;
+  bottom: 20px;
+  right: 70%;
+  height: 100%;
+  width: 30%;
+  /* background-color: red; */
+} .arrow::after {
+  position: absolute;
+  border: 5px solid black;
+  content: '';
+  border-color: transparent transparent black black;
+  top: 22px;
+  left: -8px;
+  height: 36px;
+  width: 36px;
+  transform: rotate(-180deg);
+}
