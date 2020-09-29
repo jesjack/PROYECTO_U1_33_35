@@ -151,15 +151,17 @@ A continuación los pasos necesarios para correr el proyecto y ejecutarlo sin ni
 
 0. Es necesario tener instalado NodeJS, PHP y MySQL para que el proyecto pueda funcionar.
 
-1. Abrir la carpeta principal del pryecto y ejecutar el comando npm install.
+1. Es necesario modificar el archivo **./database.json** con la información correspondiente al host de las bases de datos correspondiente.
+
+2. Abrir la carpeta principal del pryecto y ejecutar el comando npm install.
 ```sh
 npm install
 ```
-2. Es importante realizar modificaciónes pertinentes con respecto a php para que el proyecto pueda renderizár las paginas correctamente.
+3. Es importante realizar modificaciónes pertinentes con respecto a php para que el proyecto pueda renderizár las paginas correctamente.
 	1. Se necesita añadir *php* a las variables de entorno. En caso de no saber como hacerlo puedes realizar busquedas en internet sobre **Como añadir php** o puedes ver el video de [Agregar php a variables de entorno del sistema | Windows 10](https://www.youtube.com/watch?v=TuZBMM-kDlk)
 	2. Se necesita modificar el archivo php.ini y colocar el parametro `short_open_tag=On` para habilitar las etiquetas cortas `<? ?>`. Esto es necesario ya que partes del codigo y a su vez el modulo que utiliza el proyecto utilizan dichas etiquetas. Puedes apoyarte en [este video de Youtube](https://www.youtube.com/watch?v=I3VdOz7sCt0).
-3. Por último se deberá ejecutar el comendo npm start para correr el proyecto.
+4. Por último se deberá ejecutar el comendo npm start para correr el proyecto.
 ```sh
 npm start
 ```
-4. Se podrá visualizar el proyecto (una vez iniciado) en la ruta [localhost:3000](http://localhost:3000/) y se podrá ver el enriquezido diseño minusiosamente elaborado de parte del frontEnd.
+5. Se podrá visualizar el proyecto (una vez iniciado) en la ruta [localhost:3000](http://localhost:3000/) y se podrá ver el enriquezido diseño minusiosamente elaborado de parte del frontEnd.
