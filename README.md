@@ -149,6 +149,8 @@ Instalación
 
 A continuación los pasos necesarios para correr el proyecto y ejecutarlo sin ningun error.
 
+0. Es necesario tener instalado NodeJS, PHP y MySQL para que el proyecto pueda funcionar.
+
 1. Abrir la carpeta principal del pryecto y ejecutar el comando npm install.
 ```sh
 npm install
